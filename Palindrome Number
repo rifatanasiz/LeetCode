@@ -1,0 +1,17 @@
+bool isPalindrome(int x){
+int orgi=x;
+int kalan=0;
+double toplam=0;
+
+while (x>0){
+    kalan=x%10;
+    toplam=toplam*10+kalan;
+    x/=10;
+}
+
+    if(toplam==orgi)
+        return 1;
+    else 
+        return 0;
+				
+}
